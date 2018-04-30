@@ -1,0 +1,587 @@
+/*шрифты*/
+@font-face{
+    font-family: 'AlegreyaSans';
+    src: url("/fonts/AlegreyaSans-Medium.ttf");
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'AlegreyaSans';
+    src: url("/fonts/AlegreyaSans-Bold.ttf");
+    font-weight: bold;
+}
+
+*{
+    font-family: AlegreyaSans, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background: black;
+}
+
+header>ul{
+    list-style-type:none;
+    width: 900px;
+    margin: 0 auto;
+}
+
+header>ul>a{
+    width: 178px;
+    display: inline-block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    border: #333333 dotted 1px;
+    text-align: center;
+    font-weight: normal;
+}
+
+header>ul>a:hover{
+    background-color: #333333;
+}
+
+footer{
+    width: 100%;
+    background-image: url("/img/Footer-2x.png");
+    background-size: contain;
+    padding: 40px 0 30px 0;
+}
+footer>h4{
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+/*банер*/
+#back{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+#backImg{
+    width: 100%;
+    padding: 200px 0;
+    background: url("/img/photo-1464059728276-d877187d61a9.jpeg") no-repeat;
+    background-size: 100vw;
+    background-position-y : 20%;
+    background-position-x : 50%;
+}
+#colorgrad{
+    background-image: url("/img/rainbow.png");
+    background-size: 100vw;
+    padding: 1px 0;
+}
+
+#zagolovok{
+    background: white;
+    text-align: center;
+    padding: 27px 20px;
+    margin: 50px auto;
+    width: 200px;
+    opacity: 0.9;
+
+}
+#allContent{
+    width: 896px;
+    margin: 0 auto 20px auto;
+    background-image: url("/img/rainbow.png");
+    background-size: 100%;
+    padding: 2px;
+}
+#content{
+    background: white;
+}
+nav{
+    width: 100%;
+}
+nav>ul{
+    list-style-type:none;
+}
+nav>ul>a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: 128px;
+    text-align: left;
+    font-size: 15px;
+
+}
+nav>ul>a>li>img{
+    position:relative;
+    top: 2px;
+}
+.pynkt{
+     margin: 14px 0 14px 4px;
+ }
+#prom>.linefoot{
+    background: crimson;
+}
+#tick>.linefoot{
+    background: tomato;
+}
+#attractions>.linefoot{
+    background: gold;
+}
+#finc>.linefoot{
+    background: yellowgreen;
+}
+#about>.linefoot{
+    background: olivedrab;
+}
+#car>.linefoot{
+    background: skyblue;
+}
+#news>.linefoot{
+    background: rebeccapurple;
+}
+.linefoot{
+    background: red;
+    padding-bottom: 4px;
+}
+
+nav>ul>a:hover .linefoot{
+    padding-bottom: 6px;
+}
+nav>ul>a:hover .pynkt{
+    margin:14px 0 12px 4px;
+}
+#promotion:hover{
+    color: crimson;
+    background: rgba(255,0,0,0.2);
+}
+#tick:hover{
+    color: tomato;
+    background: rgba(255,99,71,0.2);
+}
+#attractions:hover{
+    color: gold;
+    background: rgba(255,215,0,0.2);
+}
+#finc:hover{
+    color: yellowgreen;
+    background: rgba(154,205,50,0.2);
+}
+#about:hover{
+    color: olivedrab;
+    background: rgba(107,142,35,0.2);
+}
+#car:hover{
+    color: skyblue;
+    background: rgba(135,206,235,0.2);
+}
+#news:hover{
+    color: rebeccapurple;
+    background: rgba(102,51,153,0.2);
+}
+
+/*раздел билетов*/
+#tickBlock{
+    padding: 20px 10px 10px 10px;
+}
+#tickBlock>h4{
+    margin-bottom: 15px;
+}
+.btn{
+    width: 876px;
+    padding: 10px 0;
+    font-size: 16px;
+    background: #e9e9e9;
+    border: #d2d2d2 solid 1px;
+}
+.block{
+    display: inline-block;
+    width: 262px;
+}
+.block>input{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+#firstInLine, #secondInLine{
+    margin-right: 32px;
+}
+#listTicket{
+    margin: 5px 20px 20px 0;
+    width: 100%;
+}
+.ticket{
+    display: inline-block;
+    width: calc(45% - 20px);
+    padding: 10px;
+    position: relative;
+    top: -10px;
+}
+.name{
+    width: calc(100% - 10px);
+    margin: 10px 0;
+    padding: 5px;
+}
+.row>.img{
+    position: relative;
+    display: inline-block;
+    width: calc(55% - 40px);
+    margin: 5px;
+    height: 100px;
+    background-image: url("/img/ticketbg.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+.row>.img>.leftBock{
+    float: left;
+    width: 291px;
+    display: inline-block;
+    height: inherit;
+    background-image: url("/img/ticketleft.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.row>.img>.leftBock>h3{
+    position:relative;
+    top: 50%;
+    left: 5%;
+}
+.row>.img>.rightBock{
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 19px;
+    display: inline-block;
+    height: inherit;
+    background-image: url("/img/ticketright.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*раздел благотворительности*/
+#promotionBlock>img{
+    width: 100%;
+    margin-bottom: -5px;
+}
+#promotionBlock>h4{
+    margin: 20px 10px;
+}
+#promotionBlock>h4>img{
+    posiotion:relative;
+    top: 2px;
+}
+#attractionsBlock{
+    padding: 20px  10px;
+}
+/*вкладка с атракционами*/
+.forImgBox>img, .forImgBoxLeft>img{
+    height: 285px;
+    width: 428px;
+    filter: brightness(70%) sepia(100%) grayscale(60%) hue-rotate(290deg);
+    transition: transform 0.5s linear;
+}
+.forImgBoxLeft:hover img, .forImgBox:hover img{
+    filter: none;
+    transform: scale(1.10);
+}
+.forImgBox, .forImgBoxLeft{
+    width: 428px;
+    height: 285px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.forImgBoxLeft{
+    margin-right: 17px;
+}
+.blockImgName{
+    background: white;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px;
+    overflow: hidden;
+}
+.blockImgName>.line>.yellow , .blockImgName>.line>.red{
+    height: 6px;
+    width: 100px;
+    position: absolute;
+}
+.blockImgName>.line{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height: 6px;
+    width: 100px;
+}
+.blockImgName>.line>.yellow{
+    background: gold;
+}
+.blockImgName>.line>.red{
+    background: tomato;
+}
+/*вкладка с ценной на акцию*/
+#fincBlock{
+    padding: 20px;
+}
+#infoPrice{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    display: inline-block;
+}
+#infoPrice>h4{
+    text-align: right;
+}
+#price{
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    margin-left: 10px;
+}
+#downloadReport{
+    margin: 20px auto;
+    border: #87ceeb solid 2px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+}
+#aboutBlock{
+    padding: 20px 0 0 20px;
+    position: relative;
+    height: 600px;
+}
+#aboutBlock>h4{
+    margin-bottom: 20px;
+}
+#aboutBlock>ol{
+    margin-left: 30px;
+    line-height: 1.5em;
+}
+#card{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+}
+.noFilter img{
+    filter:none;
+}
+#carBlock{
+    padding: 20px 10px;
+}
+#newsBlock{
+    padding: 20px;
+}
+.rowNews{
+    border: #d2d2d2 solid 1px;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow:  0 0 1px 1px silver;
+}
+.newsColor{
+    color: #31a0ea;
+}
+#carBlock>a , #carBlock>h4>a{
+    color: black;
+}
+/*пасхалка с кодом*/
+#forpashalka{
+    width: calc(100% - 80px);
+    margin-bottom: 100px;
+    padding: 40px;
+    clear: both;
+}
+#pashalka{
+    margin: 0 50%;
+    position: relative;
+}
+#black{
+    background: black;
+    z-index: 1;
+}
+.reckt{
+    width: 2px;
+    height: 2px;
+    position: absolute;
+}
+#tomato{
+    background: tomato;
+}
+#gold{
+    background: gold;
+}
+#yellowgreen{
+    background: yellowgreen;
+}
+#olivedrab{
+    background: olivedrab;
+}
+#skyblue{
+    background: skyblue;
+}
+#rebeccapurle{
+    background: rebeccapurple;
+}
+#crimson{
+    background: crimson;
+}
+
+
+@media (max-width: 640px) {
+    #navig{
+        display: none;
+    }
+    #allContent{
+        width: calc(100% - 4px);
+    }
+    #content>div{
+        border: gold solid 1px;
+    }
+    header>ul{
+        width: 100%;
+    }
+    header>ul>a{
+        width: calc(20% - 2px);
+        display: inline-block;
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
+        border: #333333 dotted 1px;
+        text-align: center;
+        font-weight: normal;
+    }
+    #promotionBlock>img{
+        margin-bottom: 20px;
+    }
+    .block{
+        display: inline-block;
+        width: calc((100%/3) - 32px);
+    }
+    .btn{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        background: #e9e9e9;
+        border: #d2d2d2 solid 1px;
+    }
+    .ticket{
+        width: calc(100% - 10px);
+        padding: 10px 0;
+        position: relative;
+        top:0;
+    }
+
+    .row>.img{
+        width: 95%;
+    }
+
+    .forImgBox>img, .forImgBoxLeft>img{
+        width: 100%;
+        height: auto;
+    }
+    .forImgBox, .forImgBoxLeft{
+        width: 100%;
+        height: calc(100% - 3px);
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .forImgBoxLeft{
+        margin-right: 0;
+    }
+    #card{
+        width: 80%;
+    }
+}
+@media (max-width: 900px) and (min-width: 640px){
+    #card{
+        width: 80%;
+    }
+    #allContent{
+        width: calc(100% - 4px);
+    }
+    header>ul{
+        width: 100%;
+    }
+    header>ul>a{
+        width: calc(20% - 2px);
+        display: inline-block;
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
+        border: #333333 dotted 1px;
+        text-align: center;
+        font-weight: normal;
+    }
+    #content{
+        display: grid;
+        grid-template-areas: "nav cent cent";
+    }
+    /**/
+    nav{
+        width: 128px;
+        grid-area: nav;
+    }
+    nav>ul>a{
+        display: block;
+        width: 128px;
+    }
+    #content>div{
+        grid-area: cent;
+    }
+    .pynkt{
+        display: inline-block;
+        margin: 14px 0 14px 4px;
+    }
+    .linefoot{
+        float: right;
+        padding-bottom: 0;
+        padding-top: 49px;
+        padding-left: 4px;
+    }
+
+    nav>ul>a:hover .linefoot{
+        padding-bottom: 0;
+        padding-left: 6px;
+    }
+    nav>ul>a:hover .pynkt{
+        margin:14px -2px 14px 4px;
+    }
+
+    .block{
+        display: inline-block;
+        width: calc((100%/3) - 32px);
+    }
+    .btn{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        background: #e9e9e9;
+        border: #d2d2d2 solid 1px;
+    }
+
+    .row{
+        width: 100%;
+    }
+    .ticket{
+         width: calc(100% - 60% - 20px);
+         padding: 10px 0;
+         position: relative;
+         top:0;
+         display: inline-block;
+     }
+    .row>.img{
+        margin-left: 10px;
+        width: calc(60% - 10px);
+        display: inline-block;
+    }
+
+    .forImgBox>img, .forImgBoxLeft>img{
+        width: 100%;
+        height: auto;
+    }
+
+}

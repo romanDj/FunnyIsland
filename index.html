@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Funny Island</title>
+    <script src="js/jquery-1.8.3.js"></script>
+
+</head>
+<body>
+<header>
+    <ul><!--
+            --><a href="">
+        <li>About</li>
+    </a><!--
+            --><a href="">
+        <li>Investors</li>
+    </a><!--
+            --><a href="">
+        <li>Careers</li>
+    </a><!--
+            --><a href="">
+        <li>Environment</li>
+    </a><!--
+            --><a href="">
+        <li>EN/SE/NO/FI</li>
+    </a><!--
+            --></ul>
+</header>
+<div id="back">
+    <div id="backImg"></div>
+    <div id="colorgrad"></div>
+</div>
+<div id="zagolovok">
+    <h1>Funny Island</h1>
+</div>
+<div id="allContent">
+    <div id="content">
+        <nav id="navig">
+            <ul><!--
+                  --><a href="" id="promotion">
+                <li class="pynkt"><img src="/img/promote-16x16.png" alt="">Promotion</li>
+                <div class="linefoot"></div>
+            </a><!--
+                  --><a href="" id="tick">
+                <li class="pynkt"><img src="/img/ticket-16x16.png" alt="">Tickets</li>
+                <div class="linefoot"></div>
+            </a><!--
+                  --><a href="" id="attractions">
+                <li class="pynkt"><img src="/img/wheel-16x16.png" alt="">Attractions</li>
+                <div class="linefoot"></div>
+            </a><!--
+                  --><a href="" id="finc">
+                <li class="pynkt"><img src="/img/financial-16x16.png" alt="">FinancialReport</li>
+                <div class="linefoot"></div>
+            </a><!--
+                  --><a href="" id="about">
+                <li class="pynkt"><img src="/img/about-16x16.png" alt="">About Company</li>
+                <div class="linefoot"></div>
+            </a><!--
+                  --><a href="" id="car">
+                <li class="pynkt"><img src="/img/career-16x16.png" alt="">Careers</li>
+                <div class="linefoot"></div>
+            </a><!--
+                  --><a href="" id="news">
+                <li class="pynkt"><img src="/img/news-16x16.png" alt="">Events&News</li>
+                <div class="linefoot"></div>
+            </a><!--
+             --></ul>
+        </nav>
+        <div id="promotionBlock">
+            <h4><img src="img/promote-16x16.png" alt="">2 adults, 1 kid free promotion during December.</h4>
+            <img src="img/photo-1460788150444-d9dc07fa9dba.jpg" alt="">
+        </div>
+        <div id="tickBlock">
+            <h4><img src="/img/ticket-16x16.png" alt="">Tickets and Admission</h4>
+            <h4>Amounts of Guests</h4>
+            <form action="php/form-handler.php" method="post">
+                <div class="block" id="firstInLine">
+                    <label>Adult:</label><br>
+                    <input type="text" list="num" id="adult" name="adult">
+                    <datalist id="num">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </datalist>
+                </div>
+                <div class="block" id="secondInLine">
+                    <label>Children:</label><br>
+                    <input type="text" list="num" id="child" name="child">
+                </div>
+                <div class="block">
+                    <label>Senior:</label><br>
+                    <input type="text" list="num" id="senior" name="senior">
+                </div>
+                <div id="listTicket">
+                    <div id="adultBlock">
+                        <div id="adultBlock1" class="row">
+                            <div class="ticket">
+                                <label>Adult1</label><br>
+                                <input type="text" class="name" name="name[ad1][fio]" value=""><br>
+                                <input type="checkbox" name="name[ad1][pass]">
+                                <label>+Fast Pass>></label><br>
+                            </div>
+                            <div class="img">
+                                <div class="leftBock">
+                                    <h3></h3>
+                                </div>
+                                <div class="rightBock"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="childBlock">
+                        <div id="childBlock1" class="row">
+                            <div class="ticket">
+                                <label>Child1</label><br>
+                                <input type="text" class="name" name="name[ch1][fio]" value=""><br>
+                                <input type="checkbox" name="name[ch1][pass]">
+                                <label>+Fast Pass>></label><br>
+                            </div>
+                            <div class="img">
+                                <div class="leftBock">
+                                    <h3></h3>
+                                </div>
+                                <div class="rightBock"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="seniorBlock">
+                        <div id="seniorBlock1" class="row">
+                            <div class="ticket">
+                                <label>Senior1</label><br>
+                                <input type="text" class="name" name="name[sn1][fio]" value=""><br>
+                                <input type="checkbox" name="name[sn1][pass]">
+                                <label>+Fast Pass>></label>
+                            </div>
+                            <div class="img">
+                                <div class="leftBock">
+                                    <h3></h3>
+                                </div>
+                                <div class="rightBock"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Checkout and Confirm the tickets">
+            </form>
+        </div>
+
+        <div id="attractionsBlock">
+            <h4><img src="img/wheel-16x16.png" alt="">Attractions</h4>
+            <div class="forImgBoxLeft select">
+                <img src="img/photo-1478369317562-3f92a3a9c9d6.jpg" alt="">
+                <div class="blockImgName">
+                    <h4>Enjoy the night</h4>
+                    <div class="line">
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="forImgBox select">
+                <img src="img/photo-1454021108581-20ec63d13d55.jpg" alt="">
+                <div class="blockImgName">
+                    <div class="line">
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                    <h4>Park in birdview</h4>
+                </div>
+            </div>
+            <div class="forImgBoxLeft select">
+                <img src="img/photo-1471893300835-dff67e40e355.jpeg" alt="">
+                <div class="blockImgName">
+                    <div class="line">
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                    <h4>Crazy tower!</h4>
+                </div>
+            </div>
+            <div class="forImgBox select">
+                <img src="img/photo-1465779171454-aa85ccf23be6.jpg" alt="">
+                <div class="blockImgName">
+                    <div class="line">
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                    <h4>Roller coster</h4>
+                </div>
+            </div>
+        </div>
+        <div id="fincBlock">
+            <h4><img src="img/financial-16x16.png" alt="">Financial Report</h4>
+            <div id="infoPrice">
+                <h4>FUNI as of 13.45 1st December, 2016:<br>
+                    Pricing delayed by 15 min.</h4>
+            </div>
+            <div id="price">
+                <h1>$93.85</h1>
+            </div>
+            <div id="downloadReport">
+                <h3>Download Q3 Financial Report</h3>
+            </div>
+        </div>
+        <div id="aboutBlock">
+            <h4><img src="img/financial-16x16.png" alt="">About Company</h4>
+            <h4>We have 3 theme parks in Scandinavia.</h4>
+            <ol>
+                <li><a href="" id="cityName1">Stockholm</a></li>
+                <li><a href="" id="cityName2">Gothenburg</a></li>
+                <li><a href="" id="cityName3">Oslo</a></li>
+            </ol>
+            <div id="card">
+                <object data="img/AxG_Pixel_Europe.svg" type="image/svg+xml" id="imap"></object>
+            </div>
+
+        </div>
+        <div id="carBlock">
+            <h4><img src="img/career-16x16.png" alt="">Careers</h4>
+            <h4>We have 5 jobs opening.</h4>
+            <div id="Box"></div>
+            <h4>Please send your cover letter and résumé via email: <a href="">funnyisland@example.com</a>.</h4><br>
+            <a href="">Learn more about our benefits.</a>
+        </div>
+        <div id="newsBlock">
+            <h4><img src="img/news-16x16.png" alt="">Events&News</h4>
+            <div class="rowNews">
+                <h4>2016-12-01</h4>
+                <h4 class="newsColor">Upcoming theme park opening in Lisbon in 2018.</h4>
+            </div>
+            <div class="rowNews">
+                <h4>2016-11-28 </h4>
+                <h4 class="newsColor">Christmas Party month</h4>
+            </div>
+            <div class="rowNews">
+                <h4>2016-11-25 </h4>
+                <h4 class="newsColor">Q4 financial report to be announced on Feb 2017</h4>
+            </div>
+            <div class="rowNews">
+                <h4>2016-11-04</h4>
+                <h4 class="newsColor">Q3 financial report is ready</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="forpashalka">
+    <div id="pashalka">
+        <div id="black" class="reckt"></div>
+        <div id="tomato" class="reckt"></div>
+        <div id="gold" class="reckt"></div>
+        <div id="yellowgreen" class="reckt"></div>
+        <div id="olivedrab" class="reckt"></div>
+        <div id="skyblue" class="reckt"></div>
+        <div id="rebeccapurle" class="reckt"></div>
+        <div id="crimson" class="reckt"></div>
+    </div>
+</div>
+<footer>
+    <h4>&copy; 2016, Funny Island Company. Attraction photos from Unsplash. Europe map from public domain.</h4>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
